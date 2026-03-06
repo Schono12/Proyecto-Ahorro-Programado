@@ -105,7 +105,7 @@ class TestCalculoCuotaAhorro(unittest.TestCase):
         # Prueba que dos variables sean iguales redondeando a 2 decimales
         self.assertAlmostEqual(cuota_calculada, cuota_esperada, 2)
 
-    def testCuotaUnica(self):
+    def testAbonoExtra2(self):
         # ENTRADAS
         meta = 20000000
         interes = 0.0083
