@@ -1,7 +1,7 @@
 # Todas las prueba sunitarias importan la biblioteca unittest
 import unittest
 # Las pruebas importan los modulos que hacen el trabajo, en este caso el modulo logica_ahorro
-import logica_ahorro
+import srs.model.logica_ahorro as logica_ahorro
 
 # Debe existir por lo menos una clase que contenga las pruebas unitarias
 # descediente de unittest.TestCase

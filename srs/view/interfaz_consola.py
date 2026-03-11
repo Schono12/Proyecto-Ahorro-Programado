@@ -1,6 +1,6 @@
 # ===== interfaz_consola.py =====
 
-import logica_ahorro
+import srs.model.logica_ahorro as logica_ahorro
 
 
 def pedir_float(mensaje):
