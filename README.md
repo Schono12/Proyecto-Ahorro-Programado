@@ -28,7 +28,45 @@ Esta herramienta busca facilitar al usuario una ayuda para alcanzar su meta de a
 -  Calcular el ahorro mensual necesario.
 -  Registrar abonos adicionales.
 -  Visualizar el progreso del ahorro.
+  
+---
+## ▶️ Funcionamiento
 
+### Prerrequisitos
+Antes de ejecutar el proyecto, asegúrese de contar con lo siguiente:
+- Tener instalado **Python 3** en su equipo.
+- Tener descargado o clonado este repositorio en su computador.
+
+### Ejecución
+Ubicado en la carpeta raíz del proyecto (`SUPER-PROYECTO`), ejecute el 
+siguiente comando en la terminal o CMD:
+```
+python src\view\interfaz_consola.py
+```
+
+> 💡 En sistemas **Mac** o **Linux**:
+> ```
+> python3 src/view/interfaz_consola.py
+> ```
+
+### Ejecución de pruebas
+Para verificar que el programa funciona correctamente, ejecute el siguiente 
+comando desde la carpeta raíz del proyecto:
+```
+/python test/test_ahorro.py
+```
+
+> 💡 En sistemas **Mac** o **Linux**:
+> ```
+>/python test/test_ahorro.py
+> ```
+
+> ⚠️ Si no tiene instalado `pytest`, puede instalarlo ejecutando:
+> ```
+> pip install pytest
+> ```
+
+---
 ## 📥 Entradas del Sistema
 El usuario debe ingresar:
 - **Meta de ahorro (Meta)**  
@@ -105,8 +143,7 @@ En caso de datos inválidos, el sistema indica qué dato causó el problema y c�
 
 ---
 
-### ¿Qué contiene cada carpeta?
-
+### Descripción carpetas
 - **`src/model/`** — Contiene la lógica del sistema. En esta carpeta se 
   encuentra el archivo `logica_ahorro.py`, responsable de ejecutar todos los 
   cálculos financieros del programa: la cuota mensual, los intereses generados 
