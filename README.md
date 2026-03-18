@@ -31,40 +31,76 @@ Esta herramienta busca facilitar al usuario una ayuda para alcanzar su meta de a
   
 ---
 ## ▶️ Funcionamiento
-
 ### Prerrequisitos
-Antes de ejecutar el proyecto, asegúrese de contar con lo siguiente:
-- Tener instalado **Python 3** en su equipo.
-- Tener descargado o clonado este repositorio en su computador.
 
-### Ejecución
-Ubicado en la carpeta raíz del proyecto (`SUPER-PROYECTO`), ejecute el 
-siguiente comando en la terminal o CMD:
+Antes de comenzar, asegúrese de tener lo siguiente:
+
+- **Python 3** instalado en su computador. Si no lo tiene, descárguelo desde [https://www.python.org/downloads/](https://www.python.org/downloads/)
+  > ⚠️ En Windows, durante la instalación marque la casilla **"Add Python to PATH"**
+- La carpeta del proyecto descargada en su computador (`Proyecto-Ahorro-Programado`)
+
+---
+### Paso 1 — Abrir la terminal
+
+**Windows:** Presione `Windows + R`, escriba `cmd` y presione Enter.
+
+**Mac:** Presione `Cmd + Espacio`, busque **Terminal** y ábrala.
+
+**Linux:** Busque **Terminal** en el menú de aplicaciones.
+
+---
+
+### Paso 2 — Ir a la carpeta del proyecto
+
+Escriba `cd` seguido de la ruta donde guardó el proyecto. Por ejemplo:
+
+**Windows:**
+```cmd
+cd C:\Users\TuUsuario\Desktop\Proyecto-Ahorro-Programado
 ```
+
+**Mac / Linux:**
+```bash
+cd /Users/TuUsuario/Desktop/Proyecto-Ahorro-Programado
+```
+
+> 💡 **Tip:** Puede arrastrar la carpeta del proyecto hacia la ventana de la terminal y la ruta aparecerá automáticamente.
+
+---
+
+### Paso 3 — Ejecutar el programa
+
+**Windows:**
+```cmd
 python src\view\interfaz_consola.py
 ```
 
-> 💡 En sistemas **Mac** o **Linux**:
-> ```
-> python3 src/view/interfaz_consola.py
-> ```
-
-### Ejecución de pruebas
-Para verificar que el programa funciona correctamente, ejecute el siguiente 
-comando desde la carpeta raíz del proyecto:
-```
-/python test/test_ahorro.py
+**Mac / Linux:**
+```bash
+python3 src/view/interfaz_consola.py
 ```
 
-> 💡 En sistemas **Mac** o **Linux**:
-> ```
->/python test/test_ahorro.py
-> ```
+Si todo está bien, verá el menú del programa en pantalla.
+### Ejecutar las pruebas unitarias
 
-> ⚠️ Si no tiene instalado `pytest`, puede instalarlo ejecutando:
+**Windows:**
+```cmd
+python -m pytest test/test_ahorro.py
+```
+
+**Mac / Linux:**
+```bash
+python3 -m pytest test/test_ahorro.py
+```
+
+> ⚠️ Si aparece el error `pytest: command not found`, instálelo primero con:
 > ```
 > pip install pytest
 > ```
+> Luego vuelva a ejecutar el comando de pruebas.
+
+Si las pruebas pasaron correctamente, verá un mensaje con `passed` en verde  
+Si alguna falló, verá `FAILED` en rojo con una descripción del error 
 
 ---
 ## 📥 Entradas del Sistema
