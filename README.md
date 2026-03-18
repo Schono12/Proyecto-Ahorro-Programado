@@ -85,12 +85,12 @@ Si todo está bien, verá el menú del programa en pantalla.
 
 **Windows:**
 ```cmd
-python -m pytest test/test_ahorro.py
+python -m unittest test\*.py
 ```
 
 **Mac / Linux:**
 ```bash
-python3 -m pytest test/test_ahorro.py
+python3 -m unittest test\*.py
 ```
 
 > ⚠️ Si aparece el error `pytest: command not found`, instálelo primero con:
