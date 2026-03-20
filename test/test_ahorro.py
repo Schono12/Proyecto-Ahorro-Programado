@@ -1,12 +1,3 @@
-"""
- ===== test_ahorro.py =====
- CLAVE 1 APLICADA: Nombres que revelan intención
-   - "meta"      → "meta_ahorro"
-   - "interes"   → "tasa_interes"
-   - "abono"     → "abono_extra"
-   - "mes_abono" → "mes_del_abono"
-"""
-
 import unittest
 import sys
 sys.path.append("src")
