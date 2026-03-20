@@ -187,7 +187,7 @@ TI = (meta - abono) - C × n
 2. **Cálculo inicial:** Se determina la cuota mensual con base en la fórmula.
 3. **Simulación mes a mes:** Se proyecta el crecimiento del ahorro aplicando los intereses.
 4. **Abonos extras (opcional):**
-   - Se suman al capital acumulado en el mes indicado.
+   - Se suman al capital acumulado en el último mes (en caso de ser dos abonos, los dos se hacen en el último mes).
    - Empiezan a generar intereses inmediatamente.
    - Se recalcula la cuota para los meses restantes.
 5. **Resultado final:** Se muestra la cuota mensual, total de intereses y total ahorrado.
