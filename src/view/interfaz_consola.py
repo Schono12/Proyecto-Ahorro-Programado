@@ -1,21 +1,3 @@
-"""
- ===== interfaz_consola.py =====
- CLAVE 2 APLICADA: Funciones pequeñas con una sola responsabilidad
- La función interfaz() original hacía todo: menú, lectura, cálculo y resultado.
- Ahora cada responsabilidad tiene su propia función:
-   - mostrar_menu()           → solo imprime el menú
-   - pedir_datos_ahorro()     → solo recolecta los datos del usuario
-   - ejecutar_opcion()        → solo llama la lógica y muestra el resultado
-   - interfaz()               → solo coordina el flujo principal
-
- CLAVE 1 APLICADA: Nombres que revelan intención
- - "opcion" → "opcion_menu" para indicar que viene del menú
- - "meta" → "meta_ahorro" consistente con logica_ahorro.py
- - "interes" → "tasa_interes" consistente con logica_ahorro.py
- - "abono" → "abono_extra" consistente con logica_ahorro.py
- - "mes" → "mes_del_abono" consistente con logica_ahorro.py
-"""
-
 import sys
 sys.path.append("src")
 from view import interfaz_consola
