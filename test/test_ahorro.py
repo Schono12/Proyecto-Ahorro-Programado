@@ -65,7 +65,7 @@ class TestCalculoCuotaAhorro(unittest.TestCase):
         # Prueba que dos variables sean iguales
         self.assertAlmostEqual(cuota_calculada, cuota_esperada, 2)
 
-    def testTasaCero(self):
+    def test_tasa_cero(self):
         # ENTRADAS
         meta_ahorro = 10000000
         tasa_interes = 0
@@ -81,7 +81,7 @@ class TestCalculoCuotaAhorro(unittest.TestCase):
         # Prueba que dos variables sean iguales redondeando a 2 decimales
         self.assertEqual(round(cuota_calculada, 2), cuota_esperada)
 
-    def testPlazo1Mes(self):
+    def test_plazo_1_Mes(self):
         # ENTRADAS
         meta_ahorro = 500000
         tasa_interes = 0.01
@@ -97,7 +97,7 @@ class TestCalculoCuotaAhorro(unittest.TestCase):
         # Prueba que dos variables sean iguales redondeando a 0 decimales
         self.assertEqual(round(cuota_calculada), cuota_esperada)
 
-    def testAbonoExtra(self):
+    def test_abono_extra(self):
         # ENTRADAS
         meta_ahorro = 10000000
         tasa_interes = 0.01
@@ -113,7 +113,7 @@ class TestCalculoCuotaAhorro(unittest.TestCase):
         # Prueba que dos variables sean iguales redondeando a 2 decimales
         self.assertAlmostEqual(cuota_calculada, cuota_esperada, 2)
 
-    def testAbonoExtra2(self):
+    def test_abono_extra_doble(self):
         # ENTRADAS
         meta_ahorro = 20000000
         tasa_interes = 0.0083
@@ -129,7 +129,7 @@ class TestCalculoCuotaAhorro(unittest.TestCase):
         # Prueba que dos variables sean iguales redondeando a 2 decimales
         self.assertAlmostEqual(cuota_calculada, cuota_esperada, 2)
 
-    def testErrorMetaCero(self):
+    def test_error_meta_cero(self):
         # ENTRADAS
         meta_ahorro = 0
         tasa_interes = 0.01
@@ -141,7 +141,7 @@ class TestCalculoCuotaAhorro(unittest.TestCase):
         with self.assertRaises(logica_ahorro.MetaInvalida):
             logica_ahorro.calcular_cuota(meta_ahorro, tasa_interes, plazo, abono_extra, mes_del_abono)
 
-    def testErrorPlazoCero(self):
+    def test_error_plazo_cero(self):
         # ENTRADAS
         meta_ahorro = 10000000
         tasa_interes = 0.01
@@ -153,7 +153,7 @@ class TestCalculoCuotaAhorro(unittest.TestCase):
         with self.assertRaises(logica_ahorro.PlazoInvalido):
             logica_ahorro.calcular_cuota(meta_ahorro, tasa_interes, plazo, abono_extra, mes_del_abono)
 
-    def testTasaNegativa(self):
+    def test_tasa_negativa(self):
         # ENTRADAS
         meta_ahorro = 10000000
         tasa_interes = -0.02
@@ -165,7 +165,7 @@ class TestCalculoCuotaAhorro(unittest.TestCase):
         with self.assertRaises(logica_ahorro.InteresInvalido):
             logica_ahorro.calcular_cuota(meta_ahorro, tasa_interes, plazo, abono_extra, mes_del_abono)
 
-    def testPlazoNegativo(self):
+    def test_plazo_negativo(self):
         # ENTRADAS
         meta_ahorro = 20000000
         tasa_interes = 0.01
