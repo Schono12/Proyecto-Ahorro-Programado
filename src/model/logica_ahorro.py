@@ -1,16 +1,3 @@
-"""
- ===== logica_ahorro.py =====
- CLAVE 1 APLICADA: Nombres que revelan intención
-   - "meta"      → "meta_ahorro"
-   - "interes"   → "tasa_interes"
-   - "abono"     → "abono_extra"
-   - "mes_abono" → "mes_del_abono"
-
- CLAVE 2 APLICADA: Funciones pequeñas con una sola responsabilidad
-   - _validar_parametros() agrupa todas las validaciones
-   - calcular_cuota() solo se encarga del cálculo
-"""
-
 class MetaInvalida(Exception):
     """Se dispara cuando la meta de ahorro es menor o igual a cero."""
 
