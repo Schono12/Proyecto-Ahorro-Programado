@@ -7,7 +7,7 @@
 - María Paula Ospina Zabala
 - Alejandro Tello Giraldo
 - Hans Schoonewolff Otero
-- Carolina Florez Salazar 
+- Carolina Flórez Salazar 
   
  --- 
  ## 👩‍💻 Persona entrevistada
